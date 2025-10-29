@@ -307,6 +307,5 @@ while post_count < POSTS_PER_DAY:
 
     # === Rotate blog index ===
     blog_index = (blog_index + 1) % len(blog_urls)
-    break
 
 logger.info(f"\nDone! Published {post_count} posts today.")
