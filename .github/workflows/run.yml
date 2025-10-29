@@ -1,0 +1,54 @@
+name: Pinterest Automation
+
+on:
+  # ✅ Run manually from the Actions tab
+  workflow_dispatch:
+
+  # ✅ Schedule to run automatically (UTC time)
+  schedule:
+    - cron: "0 3 * * *"  # Every day at 03:00 UTC — adjust to your timezone
+
+jobs:
+  run-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧭 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: ⚙️ Create .env file
+        run: |
+          echo "HUGGINGFACE_TOKEN_1=${{ secrets.HUGGINGFACE_TOKEN_1 }}" >> .env
+          echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> .env
+          echo "TYPE=${{ secrets.TYPE }}" >> .env
+          echo "PROJECT_ID=${{ secrets.PROJECT_ID }}" >> .env
+          echo "PRIVATE_KEY_ID=${{ secrets.PRIVATE_KEY_ID }}" >> .env
+          echo "PRIVATE_KEY=${{ secrets.PRIVATE_KEY }}" >> .env
+          echo "CLIENT_EMAIL=${{ secrets.CLIENT_EMAIL }}" >> .env
+          echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> .env
+          echo "AUTH_URI=${{ secrets.AUTH_URI }}" >> .env
+          echo "TOKEN_URI=${{ secrets.TOKEN_URI }}" >> .env
+          echo "AUTH_PROVIDER_X509_CERT_URL=${{ secrets.AUTH_PROVIDER_X509_CERT_URL }}" >> .env
+          echo "CLIENT_X509_CERT_URL=${{ secrets.CLIENT_X509_CERT_URL }}" >> .env
+          echo "UNIVERSE_DOMAIN=${{ secrets.UNIVERSE_DOMAIN }}" >> .env
+
+      - name: 🚀 Run Pinterest Automation
+        run: |
+          python pin_automation.py
+
+      - name: 📤 Upload logs as artifact
+        if: always()  # even if the script fails
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: logs/
