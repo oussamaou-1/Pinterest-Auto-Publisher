@@ -44,7 +44,7 @@ jobs:
 
       - name: 🚀 Run Pinterest Automation
         run: |
-          python pin_automation.py
+          python pinterest_auto_pub.py
 
       - name: 📤 Upload logs as artifact
         if: always()  # even if the script fails
