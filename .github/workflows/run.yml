@@ -1,9 +1,6 @@
 name: Pinterest Automation
 
 on:
-  # ✅ Run manually from the Actions tab
-  workflow_dispatch:
-
   # ✅ Schedule to run automatically (UTC time)
   schedule:
     - cron: "0 17 * * *"  # Every day at 03:00 UTC — adjust to your timezone
