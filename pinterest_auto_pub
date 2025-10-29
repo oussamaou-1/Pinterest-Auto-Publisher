@@ -1,0 +1,312 @@
+from doctest import debug
+from dotenv import load_dotenv
+from gradio_client import Client
+from PIL import Image
+import os
+import time
+import requests
+import json
+import gspread
+import datetime
+import re
+import logging
+from logging.handlers import TimedRotatingFileHandler
+from io import BytesIO
+from oauth2client.service_account import ServiceAccountCredentials
+
+load_dotenv()
+
+# ==== CONFIG ====
+HUGGINGFACE_TOKENS = [os.getenv("HUGGINGFACE_TOKEN_1")]
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+HUGGINGFACE_SPACE = "stabilityai/stable-diffusion"
+DELAY_IMAGE = 8
+SHEET_NAME = "PinterestContent"
+CREDENTIALS_JSON = "credentials.json"
+
+# temp-hosting options
+DELETE_LOCAL_AFTER_UPLOAD = True   # remove local image after uploading
+UPLOAD_TIMEOUT = 60
+
+# === LOGGING CONFIGURATION ===
+LOG_DIR = "logs"
+os.makedirs(LOG_DIR, exist_ok=True)  # make sure folder exists
+
+LOG_FILE = os.path.join(LOG_DIR, "pin_automation.log")
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Rotate logs daily, keep last 7 days
+handler = TimedRotatingFileHandler(LOG_FILE, when="midnight", interval=1, backupCount=7)
+formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s", "%Y-%m-%d %H:%M:%S")
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+# ==== GOOGLE SHEETS ====
+def create_keyfile_dict():
+    variables_keys = {
+  "type": os.getenv("TYPE"),        
+  "project_id": os.getenv("PROJECT_ID"),
+  "private_key_id": os.getenv("PRIVATE_KEY_ID"),
+  "private_key": os.getenv("PRIVATE_KEY").replace('\\n', '\n'),
+  "client_email": os.getenv("CLIENT_EMAIL"),
+  "client_id": os.getenv("CLIENT_ID"),
+  "auth_uri": os.getenv("AUTH_URI"),
+  "token_uri": os.getenv("TOKEN_URI"),
+  "auth_provider_x509_cert_url": os.getenv("AUTH_PROVIDER_X509_CERT_URL"),
+  "client_x509_cert_url": os.getenv("CLIENT_X509_CERT_URL"),
+  "universe_domain": os.getenv("UNIVERSE_DOMAIN")
+    }
+    return variables_keys
+
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+try:
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(create_keyfile_dict(), scope)
+    client_gs = gspread.authorize(creds)
+    content_sheet = client_gs.open(SHEET_NAME).worksheet("_1")
+    sitemap_sheet = client_gs.open(SHEET_NAME).worksheet("_2")
+    logger.info("Google Sheets authentication successful.")
+except Exception as e:
+    logger.error(f"Google Sheets authentication failed: {e}")
+    raise e
+
+logger.info("Starting Pinterest Auto Publisher")
+
+# ==== TOKEN ROTATION ====
+_token_index = 0
+def get_next_token():
+    global _token_index
+    token = HUGGINGFACE_TOKENS[_token_index]
+    _token_index = (_token_index + 1) % len(HUGGINGFACE_TOKENS)
+    return token
+
+def get_gradio_client():
+    token = get_next_token()
+    logger.info(f"Using token {token[-6:]}")
+    return Client(HUGGINGFACE_SPACE, hf_token=token)
+
+# ==== BLOG URL LIST (no marking used) ====
+sitemap_rows = sitemap_sheet.get_all_records()
+blog_urls = [r.get("Blog URL") for r in sitemap_rows if r.get("Blog URL")]
+if not blog_urls:
+    logger.error("No blog URLs found in the sitemap sheet.")
+    raise RuntimeError("No blog URLs found in the sitemap sheet.")
+logger.info(f"Loaded {len(blog_urls)} blogs for rotation.")
+
+# ==== IMAGE GENERATION ====
+IMAGE_STYLE = ", beautiful furniture placement, stylish decor, balanced composition, high-resolution Pinterest home decor photo, DSLR, Pinterest aesthetic"
+
+def _slugify(s: str) -> str:
+    s = re.sub(r"[^a-zA-Z0-9\-_. ]", "", s).strip().lower()
+    s = re.sub(r"\s+", "_", s)
+    return s or "image"
+
+def resize_cover_pinterest(path):
+    target_width, target_height = 1000, 1500
+    img = Image.open(path)
+    ratio = max(target_width / img.width, target_height / img.height)
+    new_size = (int(img.width * ratio), int(img.height * ratio))
+    img = img.resize(new_size, Image.LANCZOS)
+    left = (img.width - target_width) / 2
+    top = (img.height - target_height) / 2
+    img = img.crop((left, top, left + target_width, top + target_height))
+    img.save(path)
+    logger.info(f"Resized for Pinterest: {path}")
+
+def generate_image(prompt, negative_prompt="", scale=5.8):
+    """Generate a single image for a prompt and return as bytes."""
+    client = get_gradio_client()
+    logger.info(f"Generating image for: {prompt}")
+    try:
+        result = client.predict(
+            prompt=prompt + IMAGE_STYLE,
+            negative=negative_prompt,
+            scale=scale,
+            api_name="/infer"
+        )
+        image_path = result[0]["image"]
+        img = Image.open(image_path)
+
+        # Resize for Pinterest (in-memory)
+        target_width, target_height = 1000, 1500
+        ratio = max(target_width / img.width, target_height / img.height)
+        new_size = (int(img.width * ratio), int(img.height * ratio))
+        img = img.resize(new_size, Image.LANCZOS)
+        left = (img.width - target_width) / 2
+        top = (img.height - target_height) / 2
+        img = img.crop((left, top, left + target_width, top + target_height))
+
+        # Save to in-memory buffer
+        buffer = BytesIO()
+        img.save(buffer, format="JPEG")
+        buffer.seek(0)
+        return buffer  # return bytes buffer instead of file path
+
+    except Exception as e:
+        logger.error(f"Image generation error: {e}")
+        return None
+
+# ==== TEMP IMAGE HOSTING (Catbox → 0x0 fallback) ====
+def upload_catbox_bytes(image_bytes, filename="image.jpg") -> str:
+    files = {"fileToUpload": (filename, image_bytes, "application/octet-stream")}
+    data = {"reqtype": "fileupload"}
+    r = requests.post("https://catbox.moe/user/api.php", data=data, files=files, timeout=UPLOAD_TIMEOUT)
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        logger.error(f"Catbox upload failed: {r.text}")
+        raise RuntimeError(f"Catbox upload failed: {r.text}")
+    return url
+
+def upload_0x0_bytes(image_bytes, filename="image.jpg") -> str:
+    files = {"file": (filename, image_bytes, "application/octet-stream")}
+    r = requests.post("https://0x0.st", files=files, timeout=UPLOAD_TIMEOUT)
+    r.raise_for_status()
+    url = r.text.strip()
+    if not url.startswith("http"):
+        logger.error(f"0x0.st upload failed: {r.text}")
+        raise RuntimeError(f"0x0.st upload failed: {r.text}")
+    return url
+
+def get_temp_image_url_from_bytes(image_bytes, filename="image.jpg") -> str:
+    try:
+        return upload_catbox_bytes(image_bytes, filename)
+    except Exception as e:
+        logger.warning(f"Catbox failed: {e}")
+    try:
+        return upload_0x0_bytes(image_bytes, filename)
+    except Exception as e:
+        logger.warning(f"0x0.st failed: {e}")
+    logger.error("All temporary upload options failed.")
+    raise RuntimeError("All temporary upload options failed.")
+
+
+# ==== SEO GENERATION ====
+def generate_seo_openrouter(url):
+    """Generate SEO titles, description, and image prompts from a given URL/topic."""
+    query = f"""
+You are a viral Pinterest SEO strategist and visual concept designer specializing in home décor and lifestyle aesthetics.
+
+TASK
+Based ONLY on the topic/title provided below, generate:
+1. A list of **3-5 viral Pinterest titles** (each ≤100 characters) crafted for high engagement and saves.
+   - Use a mix of formats: numbered ideas, transformation hooks, and descriptive style phrases.
+   - Combine **style + room + emotional outcome** (e.g., “22 Rustic Bedroom Ideas for a Cozy Oasis”).
+   - Each title should sound natural, elegant, and aspirational.
+   - Include emotional or sensory adjectives (cozy, airy, elegant, minimalist, earthy, chic, dreamy).
+   - Keep tone visual and inspiring — no clickbait, no product focus.
+
+2. One **Pinterest description** (200–350 characters) written in a warm, descriptive, and SEO-friendly tone.
+   - Integrate 3–5 natural keywords (style + room + décor terms).
+   - Evoke an emotional benefit: “discover calm spaces,” “get inspired to refresh your home,” etc.
+   - Avoid hashtags, emojis, or sales tone; sound human and Pinterest-native.
+   - Combine aspiration (“beautiful,” “inviting”) with practical value (“ideas you can recreate”).
+
+3. For each title, write a corresponding **image generation prompt** describing a realistic, photographic home décor scene.
+   - Focus on composition, lighting, materials, color palette, and décor details.
+   - Use commas to separate elements naturally.
+   - Avoid people, text, watermarks, or camera jargon.
+   - Prioritize soft natural light, warm textures, and stylistic coherence with the title.
+
+TOPIC
+"{url}"
+
+OUTPUT (STRICT JSON ONLY, no extra text):
+{{
+  "topic": "{url}",
+  "titles": ["...", "..."],
+  "description": "...",
+  "prompts": ["...", "..."]
+}}
+""".strip()
+
+    response = requests.post(
+        url="https://openrouter.ai/api/v1/chat/completions",
+        headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"},
+        data=json.dumps({
+            "model": "openai/gpt-3.5-turbo",
+            "messages": [{"role": "user", "content": query}],
+            "temperature": 0.6
+        })
+    )
+
+    text = response.json().get("choices", [{}])[0].get("message", {}).get("content", "")
+    try:
+        cleaned = text.strip().replace("```json", "").replace("```", "").strip()
+        data = json.loads(cleaned)
+    except Exception as e:
+        logger.warning(f"Failed to parse SEO JSON: {e}\nRaw: {text}")
+        data = {}
+
+    data.setdefault("titles", [])
+    data.setdefault("description", "")
+    data.setdefault("prompts", [])
+
+    # Guard against mismatched lengths
+    if len(data["prompts"]) != len(data["titles"]):
+        n = min(len(data["prompts"]), len(data["titles"]))
+        data["titles"] = data["titles"][:n]
+        data["prompts"] = data["prompts"][:n]
+    return data
+
+# ==== DAILY POST CONFIG ====
+POSTS_PER_DAY = 10  # total posts to make per day
+DO_IMAGES = True
+NEGATIVE_PROMPT = ""
+
+# ==== DAILY LOOP ====
+post_count = 0
+blog_index = 0
+
+while post_count < POSTS_PER_DAY:
+    blog_url = blog_urls[blog_index]
+    logger.info(f"\nUsing blog: {blog_url}")
+
+    # === Step 1: Generate SEO data ===
+    seo_data = generate_seo_openrouter(blog_url)
+
+    # === Step 2: Build entry list ===
+    entries = []
+    for title, img_prompt in zip(seo_data["titles"], seo_data["prompts"]):
+        entries.append({
+            "title": (title or "")[:100],
+            "prompt": img_prompt or "",
+            "description": (seo_data.get("description") or "")[:500],
+            "blog_url": blog_url
+        })
+
+    # === Step 3: Generate images, upload to temp host, append to Google Sheets ===
+    for item in entries:
+        if post_count >= POSTS_PER_DAY:
+            break
+
+        image_bytes = generate_image(item["prompt"], negative_prompt=NEGATIVE_PROMPT)
+        image_url = ""
+        status = "seo-only"
+
+        if image_bytes:
+            try:
+                filename = _slugify(item["title"]) + ".jpg"
+                image_url = get_temp_image_url_from_bytes(image_bytes, filename)
+                status = "ready"
+                logger.info(f"Temp URL: {image_url}")
+            except Exception as e:
+                logger.error(f"Temp upload failed: {e}")
+
+
+        # Append (A: Blog URL, B: Title, C: Image URL, D: Description, E: Status)
+        content_sheet.append_row(
+            [item["blog_url"], None, image_url, item["title"], item["description"], status],
+            value_input_option="USER_ENTERED"
+        )
+
+        post_count += 1
+        logger.info(f"Post #{post_count}: Added row for {item['title']}")
+        time.sleep(DELAY_IMAGE if DO_IMAGES else 0.2)
+
+    # === Rotate blog index ===
+    blog_index = (blog_index + 1) % len(blog_urls)
+    break
+
+logger.info(f"\nDone! Published {post_count} posts today.")
