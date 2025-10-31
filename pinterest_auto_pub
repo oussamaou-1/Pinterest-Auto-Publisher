@@ -1,7 +1,8 @@
 from doctest import debug
+import textwrap
 from dotenv import load_dotenv
 from gradio_client import Client
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 import os
 import time
 import requests
@@ -13,6 +14,7 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 from io import BytesIO
 from oauth2client.service_account import ServiceAccountCredentials
+from urllib.parse import urlparse
 
 load_dotenv()
 
@@ -115,37 +117,77 @@ def resize_cover_pinterest(path):
     logger.info(f"Resized for Pinterest: {path}")
 
 def generate_image(prompt, negative_prompt="", scale=5.8):
-    """Generate a single image for a prompt and return as bytes."""
+    """
+    Generate 4 variants from the model in one call, combine into a collage, and return as bytes.
+    """
     client = get_gradio_client()
-    logger.info(f"Generating image for: {prompt}")
+    logger.info(f"Generating 4-variant collage for: {prompt}")
+
     try:
+        # Run model once — get multiple images
         result = client.predict(
             prompt=prompt + IMAGE_STYLE,
             negative=negative_prompt,
             scale=scale,
             api_name="/infer"
         )
-        image_path = result[0]["image"]
-        img = Image.open(image_path)
 
-        # Resize for Pinterest (in-memory)
+        # Extract all variants (assuming up to 4 are returned)
+        variant_images = []
+        for r in result:
+            if isinstance(r, dict) and "image" in r:
+                img = Image.open(r["image"]).convert("RGB")
+                variant_images.append(img)
+
+        if not variant_images:
+            logger.error("No images returned from model.")
+            return None
+
+        # Resize all to same Pinterest size
         target_width, target_height = 1000, 1500
-        ratio = max(target_width / img.width, target_height / img.height)
-        new_size = (int(img.width * ratio), int(img.height * ratio))
-        img = img.resize(new_size, Image.LANCZOS)
-        left = (img.width - target_width) / 2
-        top = (img.height - target_height) / 2
-        img = img.crop((left, top, left + target_width, top + target_height))
+        processed_imgs = []
+        for img in variant_images[:4]:
+            ratio = max(target_width / img.width, target_height / img.height)
+            new_size = (int(img.width * ratio), int(img.height * ratio))
+            img = img.resize(new_size, Image.LANCZOS)
+            left = (img.width - target_width) / 2
+            top = (img.height - target_height) / 2
+            img = img.crop((left, top, left + target_width, top + target_height))
+            processed_imgs.append(img)
 
-        # Save to in-memory buffer
+        # If fewer than 4 images returned, duplicate to fill
+        while len(processed_imgs) < 4:
+            processed_imgs.append(processed_imgs[0])
+
+        # === Create 2x2 collage ===
+        space = 25
+        bg_color = (255, 255, 255)
+        collage_width = (target_width * 2) + space * 3
+        collage_height = (target_height * 2) + space * 3
+        collage = Image.new("RGB", (collage_width, collage_height), bg_color)
+
+        positions = [
+            (space, space),
+            (target_width + 2 * space, space),
+            (space, target_height + 2 * space),
+            (target_width + 2 * space, target_height + 2 * space)
+        ]
+
+        for img, pos in zip(processed_imgs[:4], positions):
+            collage.paste(img, pos)
+
+        # Save collage to buffer
         buffer = BytesIO()
-        img.save(buffer, format="JPEG")
+        collage.save(buffer, format="JPEG", quality=95)
         buffer.seek(0)
-        return buffer  # return bytes buffer instead of file path
+
+        logger.info("Collage created successfully.")
+        return buffer
 
     except Exception as e:
-        logger.error(f"Image generation error: {e}")
+        logger.error(f"Collage generation failed: {e}")
         return None
+
 
 # ==== TEMP IMAGE HOSTING (Catbox → 0x0 fallback) ====
 def upload_catbox_bytes(image_bytes, filename="image.jpg") -> str:
@@ -181,6 +223,88 @@ def get_temp_image_url_from_bytes(image_bytes, filename="image.jpg") -> str:
     logger.error("All temporary upload options failed.")
     raise RuntimeError("All temporary upload options failed.")
 
+def add_pinterest_overlay(image_bytes, title, blog_url, overlay_color="black"):
+    """
+    Adds a clean semi-transparent overlay at the bottom
+    with centered title + domain name inside the rectangle.
+    """
+    base = Image.open(BytesIO(image_bytes)).convert("RGBA")
+    width, height = base.size
+
+    # === Extract domain ===
+    try:
+        parsed = urlparse(blog_url)
+        domain = parsed.netloc.replace("www.", "") or blog_url
+    except Exception:
+        domain = blog_url
+
+    # === Overlay settings ===
+    overlay_height = int(height * 0.18)
+    overlay_y = int(height * 0.5) - (overlay_height // 2)
+    padding_x = int(width * 0.05)   # 5% horizontal padding
+    padding_y = int(overlay_height * 0.1)  # 10% vertical padding
+
+    # Colors
+    if overlay_color == "white":
+        overlay_fill = (255, 255, 255, 220)
+        text_color = (0, 0, 0, 255)
+        subtext_color = (70, 70, 70, 255)
+    else:
+        overlay_fill = (0, 0, 0, 180)
+        text_color = (255, 255, 255, 255)
+        subtext_color = (230, 230, 230, 255)
+
+    # === Create overlay rectangle ===
+    overlay = Image.new("RGBA", (width, overlay_height + 20), overlay_fill)
+    base.alpha_composite(overlay, dest=(0, overlay_y))
+    draw = ImageDraw.Draw(base)
+
+    # === Font sizes relative to overlay height ===
+    title_font_size = int(overlay_height * 0.22)
+    domain_font_size = int(overlay_height * 0.10)
+
+    # Load fonts safely
+    try:
+        font_title = ImageFont.truetype("fonts/Montserrat-Bold.ttf", size=title_font_size)
+        font_link = ImageFont.truetype("fonts/Montserrat-Regular.ttf", size=domain_font_size)
+    except Exception:
+        font_title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", size=title_font_size)
+        font_link = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", size=domain_font_size)
+
+    # === Word wrapping within padded area ===
+    max_text_width = width - (padding_x * 2)
+    wrapped_lines = []
+    for line in textwrap.wrap(title, width=40):
+        if draw.textlength(line, font=font_title) <= max_text_width:
+            wrapped_lines.append(line)
+        else:
+            shorter = textwrap.wrap(line, width=25)
+            wrapped_lines.extend(shorter)
+
+    # === Measure total text block height ===
+    title_line_height = font_title.getbbox("A")[3] + 4
+    title_block_height = len(wrapped_lines) * title_line_height
+    domain_height = font_link.getbbox("A")[3]
+    total_text_height = title_block_height + domain_height + padding_y
+
+    # === Compute vertical starting position inside overlay ===
+    y_text = overlay_y + (overlay_height - total_text_height) / 2
+
+    # === Draw title lines ===
+    for line in wrapped_lines:
+        w = draw.textlength(line, font=font_title)
+        draw.text(((width - w) / 2, y_text), line, font=font_title, fill=text_color)
+        y_text += title_line_height
+
+    # === Draw domain below title ===
+    domain_w = draw.textlength(domain, font=font_link)
+    draw.text(((width - domain_w) / 2, y_text + 50), domain, font=font_link, fill=subtext_color)
+
+    # === Export final image ===
+    buffer = BytesIO()
+    base.convert("RGB").save(buffer, format="JPEG", quality=95)
+    buffer.seek(0)
+    return buffer
 
 # ==== SEO GENERATION ====
 def generate_seo_openrouter(url):
@@ -251,7 +375,7 @@ OUTPUT (STRICT JSON ONLY, no extra text):
     return data
 
 # ==== DAILY POST CONFIG ====
-POSTS_PER_DAY = 10  # total posts to make per day
+POSTS_PER_DAY = 1  # total posts to make per day
 DO_IMAGES = True
 NEGATIVE_PROMPT = ""
 
@@ -287,8 +411,17 @@ while post_count < POSTS_PER_DAY:
 
         if image_bytes:
             try:
+
+                # Apply overlay text
+                overlay_buffer = add_pinterest_overlay(
+                    image_bytes.getvalue(),
+                    title=item["title"],
+                    blog_url=item["blog_url"],
+                    overlay_color="white"
+                )
+
                 filename = _slugify(item["title"]) + ".jpg"
-                image_url = get_temp_image_url_from_bytes(image_bytes, filename)
+                image_url = get_temp_image_url_from_bytes(overlay_buffer.getvalue(), filename)
                 status = "ready"
                 logger.info(f"Temp URL: {image_url}")
             except Exception as e:

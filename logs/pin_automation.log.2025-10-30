@@ -1,0 +1,553 @@
+2025-10-30 09:35:48 [INFO] Google Sheets authentication successful.
+2025-10-30 09:35:48 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 09:35:49 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 09:35:49 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 09:35:52 [INFO] Using token zxWztk
+2025-10-30 09:35:53 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 09:35:53 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 09:35:54 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 09:35:55 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 09:35:55 [INFO] Generating image for: Capture a 70s-inspired bathroom scene with earthy brown tiles, a sunburst mirror, and a shaggy rug for a true retro vibe.
+2025-10-30 09:35:55 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 09:35:56 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/d54da1fa-a6f6-4cfd-8080-cf5c8e992377 "HTTP/1.1 200 OK"
+2025-10-30 09:35:56 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 09:35:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=d54da1fa-a6f6-4cfd-8080-cf5c8e992377 "HTTP/1.1 200 OK"
+2025-10-30 09:36:07 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/16a075ebea0b1b8dfdfae0d77cf2a7ff6235d4e3c05ddbd317594712504fbfdf/5af87a56-e288-48a2-bd10-856c24067079.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:36:09 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/bacc8db8471c6a3141b8091e198c30dac1cf38ab97f76a355cff42f0067ca0c3/9be3f0ac-b79b-4da9-bd55-bc7816d37d85.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:36:10 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/a30f899ec3ba419caedda067685c327f20a7bf8fbaca184a984b0123ccf787e9/5904d212-e257-4009-a27f-c4e664ff52e7.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:36:11 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/c664855863d2d8571113580c18740c0b3a699f0a4ccc366edfcae1f515fc04fd/b1064c81-45a0-4f4c-a29d-1377ea4cf067.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:36:14 [INFO] Temp URL: https://files.catbox.moe/7fthyx.jpg
+2025-10-30 09:36:15 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 09:36:23 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 09:38:36 [INFO] Google Sheets authentication successful.
+2025-10-30 09:38:36 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 09:38:37 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 09:38:37 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 09:38:40 [INFO] Using token zxWztk
+2025-10-30 09:38:41 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 09:38:41 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 09:38:42 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 09:38:44 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 09:38:44 [INFO] Generating image for: A 70s-inspired bathroom scene featuring avocado green tiles, a sunburst mirror, shaggy rug, macramé plant hangers, and a retro vanity with brass accents.
+2025-10-30 09:38:44 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 09:38:45 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/fdc8dafc-40d4-4cf0-bba2-c838c43e056b "HTTP/1.1 200 OK"
+2025-10-30 09:38:45 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 09:38:46 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=fdc8dafc-40d4-4cf0-bba2-c838c43e056b "HTTP/1.1 200 OK"
+2025-10-30 09:38:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/9230e8ae69ac176a5783f2abca25e5436985dae86035140510223f011986ed6a/0c5e2532-f047-4a49-9499-c683b062acf0.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:38:58 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/6128e0cb4a44e0bdb2b45fdc9a947bed1797e5c3f1d42be0a171644427b89543/56ef5599-008b-402a-ac0c-3093b4442a59.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:39:00 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/4349df5ca5ba7ea90a151c212128e73d496ff63110d80c3bfcf23d7db81e2990/3606f49e-90d1-4ad4-8a11-043389e3a70b.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:39:02 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/70734bcf4856152cee83311f782e3434db28d445890ec17a56f7a32986b905cb/d965bfe5-cef5-456b-9eeb-864d56d25021.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:39:05 [INFO] Temp URL: https://files.catbox.moe/ox8kym.jpg
+2025-10-30 09:39:06 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 09:39:14 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 09:44:15 [INFO] Google Sheets authentication successful.
+2025-10-30 09:44:15 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 09:44:15 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 09:44:15 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 09:44:19 [INFO] Using token zxWztk
+2025-10-30 09:44:19 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 09:44:20 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 09:44:21 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 09:44:22 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 09:44:22 [INFO] Generating image for: Capture a 70s bathroom oasis with avocado green tiles, shaggy rugs, and sunburst mirrors.
+2025-10-30 09:44:22 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 09:44:23 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 09:44:23 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/889101cd-00bd-4a2c-8c1c-edf94e9f3515 "HTTP/1.1 200 OK"
+2025-10-30 09:44:24 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=889101cd-00bd-4a2c-8c1c-edf94e9f3515 "HTTP/1.1 200 OK"
+2025-10-30 09:44:34 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/55ad15fb03c0e30cfacb3de36df3ff42c848f8926203125cfeada7c83318b784/c89b9b3e-9eed-4a83-8b2d-95a03310f120.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:44:36 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/3d2459b6cc8875e2d95784a84617f81dd76088ed7406cf532ad84d583b83d60c/5d839334-b181-42a1-8a77-c304e735d513.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:44:37 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/7dccfac7acd66cb779a1c3f488a4d91ee307f5d03814e5950d54efd96690672d/3d4b79fe-514f-4f38-a0a5-2693c8597e64.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:44:39 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/07a0a6678addb49a573029cb3a591ba8057a2b6125729d4abbc765eb9b5d2209/d4616443-de5a-407c-8ade-5726a7c2af82.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:44:42 [INFO] Temp URL: https://files.catbox.moe/fl6qdr.jpg
+2025-10-30 09:44:43 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Revival
+2025-10-30 09:44:51 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 09:46:49 [INFO] Google Sheets authentication successful.
+2025-10-30 09:46:49 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 09:46:50 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 09:46:50 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 09:46:53 [INFO] Using token zxWztk
+2025-10-30 09:46:54 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 09:46:54 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 09:46:55 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 09:46:56 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 09:46:56 [INFO] Generating image for: Capture the essence of the 70s with a bathroom scene featuring bold avocado green tiles, a sunken bathtub, shaggy orange rugs, and a retro hanging light fixture.
+2025-10-30 09:46:56 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 09:46:57 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 09:46:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/a0d4ec6f-c1bc-4db0-9a1e-4681244d0001 "HTTP/1.1 200 OK"
+2025-10-30 09:46:58 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=a0d4ec6f-c1bc-4db0-9a1e-4681244d0001 "HTTP/1.1 200 OK"
+2025-10-30 09:47:09 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/f8cca414d4a291458cb3714b7ca4c91a2ac1a926ba34fe66985a7bb90f312134/93180331-78d8-4f45-8089-7771280e6e79.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:47:10 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/1a0649d5cda1f988cef75beb067b945f5bb1b557609db51a25ead928c8bd4cee/53e4371f-4127-481d-b627-ad59acde8c05.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:47:12 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/4b21df30bdcbbabe999cfe4b97fc86bb2549ef6f99e8289a928b923d603157dc/ea42b318-59de-40a0-959b-d34ec536b766.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:47:13 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/f2c377af8b20e153f2ad39fbd1c24d9dd4b6c606312571b20e305582c79a8134/62eb6b7d-25b1-4d5b-b6fd-e591f75c5be5.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:47:16 [INFO] Temp URL: https://files.catbox.moe/4kidfi.jpg
+2025-10-30 09:47:17 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 09:47:25 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 09:56:06 [INFO] Google Sheets authentication successful.
+2025-10-30 09:56:06 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 09:56:06 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 09:56:06 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 09:56:10 [INFO] Using token zxWztk
+2025-10-30 09:56:10 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 09:56:11 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 09:56:12 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 09:56:13 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 09:56:13 [INFO] Generating image for: Capture a retro revival with a 70s bathroom scene featuring bold patterns, shaggy rugs, and vibrant colors reminiscent of the era.
+2025-10-30 09:56:13 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 09:56:14 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/ae7ea982-b8ae-468b-aab9-78b95b4f5ca5 "HTTP/1.1 200 OK"
+2025-10-30 09:56:14 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 09:56:15 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=ae7ea982-b8ae-468b-aab9-78b95b4f5ca5 "HTTP/1.1 200 OK"
+2025-10-30 09:56:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/7f994d52260f752e456f0c44f6dabe4e21d78d820f9c70a4b37308b821c29195/ea945fd0-d00e-4f7f-8020-aff41102ee5c.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:56:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/a1af8b92f739ae74a3fdd3097e7152e0b8c1c33f9cb71cdd10472a4109f24736/f9612983-1246-44a9-8bc4-0ae272e9bb87.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:56:31 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/d5617542f25a4df6e1f3066250e4798d95b9014629ad0f72cde25e3028a61e44/e1243517-aeb8-4c0a-b6b4-0233e046f1b8.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:56:32 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/05c0d5bb22ff34e60117a77d96e76a155447143f6568b19a420636f2508dac8c/65846978-33d1-474c-8633-e4927430a8a9.jpg "HTTP/1.1 200 OK"
+2025-10-30 09:56:35 [INFO] Temp URL: https://files.catbox.moe/id8lcl.jpg
+2025-10-30 09:56:35 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Makeover Ideas for a Retro Revival
+2025-10-30 09:56:43 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:32:50 [INFO] Google Sheets authentication successful.
+2025-10-30 22:32:50 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:32:51 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:32:51 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:32:54 [INFO] Using token zxWztk
+2025-10-30 22:32:55 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:32:55 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:32:56 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:32:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:32:57 [INFO] Generating image for: Capture a retro oasis with a 70s-inspired bathroom featuring avocado green tiles, a sunburst mirror, shaggy rug, and macramé plant hangers.
+2025-10-30 22:32:57 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:32:58 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/02bc4378-ccdd-48fa-a7fb-178682988051 "HTTP/1.1 200 OK"
+2025-10-30 22:32:58 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:32:59 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=02bc4378-ccdd-48fa-a7fb-178682988051 "HTTP/1.1 200 OK"
+2025-10-30 22:33:10 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ca21fc0b99d6df559803a2fbf565b86af6d0ae3a9b0f747b122a353dec34736c/a95bd670-b285-4b2a-9970-4a172ad83cd6.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:33:11 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/b4ddb106330f18c7301c3e64f01f4ff63ef69a473deac1712d80618ccf3bedca/2ae6004f-4ee5-411c-896f-d3c09397ff19.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:33:13 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/8eceaaf46bd7c14ec9d8fcf5c447003781a17f445796daf64c31157a7eb4a758/7d5acfd5-1123-43c6-bec0-237e67917de2.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:33:15 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/675f7f87ee3964b3e3e17a778e7ceb050bb12169f345ee45f00b34e6f4bce08c/9fe70464-80df-43fb-a6c6-e06ec481b9d1.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:33:15 [ERROR] Temp upload failed: 'float' object cannot be interpreted as an integer
+2025-10-30 22:33:16 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Revival
+2025-10-30 22:33:24 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:42:00 [INFO] Google Sheets authentication successful.
+2025-10-30 22:42:00 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:42:00 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:42:00 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:42:06 [INFO] Using token zxWztk
+2025-10-30 22:42:07 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:42:07 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:42:08 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:42:09 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:42:09 [INFO] Generating image for: A retro-inspired bathroom scene featuring bold geometric wallpaper, shaggy rugs, a sunburst mirror, and a macramé plant holder.
+2025-10-30 22:42:09 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:42:10 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:42:10 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/a1270159-fd74-4f89-9461-50e0549b977f "HTTP/1.1 200 OK"
+2025-10-30 22:42:11 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=a1270159-fd74-4f89-9461-50e0549b977f "HTTP/1.1 200 OK"
+2025-10-30 22:42:22 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/77f01e844642ff5bc7d03ae89abbb7cf440d7c3fbf14799f606d302f66648168/84d3be19-12a7-49ba-9615-220fd500f72b.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:42:23 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/7d99ebd7032f27d8db7a6424402195551afbd66bb9ed62d6caeda87de1221543/4e1fa827-d904-4942-9085-781485830534.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:42:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/f7976e76f65445bdfc8ebbec05caa355e1017d7f9e5f688d600fb6c65aeb5b7e/3bd1e119-cf57-47fa-afd9-51908bc3769e.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:42:26 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/8afc1eed442d5e6a0d44f357e9711ffe8422d84ea4c9b9769db198d44e89864a/13f28d03-1fe7-4dc2-9ba5-0669c6f8f7fa.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:42:29 [INFO] Temp URL: https://files.catbox.moe/5wb5ie.jpg
+2025-10-30 22:42:30 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:42:38 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:46:03 [INFO] Google Sheets authentication successful.
+2025-10-30 22:46:03 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:46:03 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:46:03 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:46:09 [INFO] Using token zxWztk
+2025-10-30 22:46:10 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:46:10 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:46:12 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:46:13 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:46:13 [INFO] Generating image for: Capture a 70s-inspired bathroom with avocado green tiles, a sunken bathtub, macramé plant hangers, and a rattan mirror.
+2025-10-30 22:46:13 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:46:14 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:46:14 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/b08ccfd8-34a5-466c-94f9-e8425690d785 "HTTP/1.1 200 OK"
+2025-10-30 22:46:15 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=b08ccfd8-34a5-466c-94f9-e8425690d785 "HTTP/1.1 200 OK"
+2025-10-30 22:46:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/60f925b804552969abb60e6f0e9590eedf9b94f0bfdb6525453975e12a16f79d/d7a33cd8-d4d7-4f06-b2dd-ec88169bee0d.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:46:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ab309c078189b65704818666c381b106c62e212dbee8fe39596c6e4c3014ad81/d459ab1c-e668-4000-97b9-858df64d24c6.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:46:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/8fb21823eb5f4e14a2217d601e7fe93388d69317bd725b9265f1630e03a4caaf/2eb2580d-94fc-4735-8f6f-58da8dac86af.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:46:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/3ba48f0fdb910fc99b5629f3b5b64c769053584941abac034c09ac5e3477aa91/a226afd6-cf03-4c9e-86e8-677f28da7ea7.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:46:32 [INFO] Temp URL: https://files.catbox.moe/ifw2dl.jpg
+2025-10-30 22:46:32 [INFO] Post #1: Added row for 15 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:46:40 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:50:19 [INFO] Google Sheets authentication successful.
+2025-10-30 22:50:19 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:50:20 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:50:20 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:50:23 [INFO] Using token zxWztk
+2025-10-30 22:50:24 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:50:24 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:50:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:50:26 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:50:26 [INFO] Generating image for: A 70s-inspired bathroom scene featuring shaggy rugs, macramé plant hangers, terracotta pots, and earth-toned tiles under soft, warm lighting.
+2025-10-30 22:50:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:50:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/a0304db3-1f44-47fb-852f-46b8a598f59a "HTTP/1.1 200 OK"
+2025-10-30 22:50:27 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:50:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=a0304db3-1f44-47fb-852f-46b8a598f59a "HTTP/1.1 200 OK"
+2025-10-30 22:50:38 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/d0df95b990365f9f60a19d7ac014652f102fff614155ba4321641644574c3fc8/31359226-51df-4b49-b5c9-15903dd7ecfa.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:50:40 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/047895db9e3b9dea7416a1775ab24a812fad1ad960c6d0a7512ce241b78d283c/a84f7dc3-6e81-4c60-83dc-7d8fcf3f11e0.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:50:41 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/1a45c80d6871f481411bb700469b0e08ae7f499c0f0eeb4f3201d5890c1e718b/bafa994a-7ef4-440c-a6d4-5db8a998a688.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:50:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/015690fcc752bbbf898d96bb625327d6dc8a8bc9582601a4145697be1419333e/5afd37b6-0bf3-457e-ba44-f29255652f5b.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:50:43 [ERROR] Temp upload failed: name 'add_pinterest_overlay' is not defined
+2025-10-30 22:50:43 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Retreat
+2025-10-30 22:50:51 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:51:41 [INFO] Google Sheets authentication successful.
+2025-10-30 22:51:41 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:51:42 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:51:42 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:51:45 [INFO] Using token zxWztk
+2025-10-30 22:51:46 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:51:46 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:51:47 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:51:48 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:51:48 [INFO] Generating image for: A vintage 70s bathroom scene featuring avocado green tiles, a sunken bathtub, hanging macramé planters, and a shaggy rug.
+2025-10-30 22:51:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:51:49 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/32c4ada2-c494-4dc9-8389-a9c15455e9bd "HTTP/1.1 200 OK"
+2025-10-30 22:51:49 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:51:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=32c4ada2-c494-4dc9-8389-a9c15455e9bd "HTTP/1.1 200 OK"
+2025-10-30 22:52:00 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/6409b89a391893b4f2253103678390ff50841fee7bc155ba4b1a116569c119c0/bad8ab0a-8da2-4ca1-823f-93458ad56c78.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:52:02 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/5c628fc7d022367651868ef15e3f176ddc300ea9d6d56e63c9e3f019368230df/d4688ac5-db56-4a31-a799-15541d905dc3.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:52:03 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/fa7bbd210df9849cb3ae035cd385d603f90f420aa356ffecdd9fd6b95b0ce4b4/9ccae69e-03d6-4345-98e4-e965bdf2fb7f.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:52:05 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/a886be3959f9da7730c933f0681151961f15be84c5f447fa9994d3dc92a206c2/d435c748-6e2b-4524-b234-d21d4b3b63bc.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:52:08 [INFO] Temp URL: https://files.catbox.moe/09x30m.jpg
+2025-10-30 22:52:08 [INFO] Post #1: Added row for 12 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:52:16 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:52:41 [INFO] Google Sheets authentication successful.
+2025-10-30 22:52:41 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:52:42 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:52:42 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:52:45 [INFO] Using token zxWztk
+2025-10-30 22:52:46 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:52:46 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:52:47 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:52:48 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:52:48 [INFO] Generating image for: Capture a 70s-inspired bathroom oasis: retro wallpaper, avocado green fixtures, shaggy rug, macramé plant hanger
+2025-10-30 22:52:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:52:49 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/1b11cf63-4e99-4b15-bea9-737e9cc3889d "HTTP/1.1 200 OK"
+2025-10-30 22:52:49 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:52:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=1b11cf63-4e99-4b15-bea9-737e9cc3889d "HTTP/1.1 200 OK"
+2025-10-30 22:53:01 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/202c5b82ceb6d452c6668a9f25e1839bd873f1e4796be04fa3f1ae5e5ea6c2ef/da9a23a8-28c6-40da-8cb1-36c2420f2731.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:02 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/343b336fe2f5aa6f021a8562d3723d589c5df462e44a9786d04b124612c6dc57/b32fd19a-67b4-4848-8748-7444b49f1a4c.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:03 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/6c713d74b714c35e6e2655722d528b483e27f239a60905abdb5f0e0cde8070a7/1e22663e-da73-4078-8281-115ffd515c84.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:05 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/943eeaa19993991db4338408bab2caf04003b6314003a1c343a35bb1a7dd7904/24ea7603-fb89-4ace-ba3e-d6df0255dcfd.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:05 [ERROR] Temp upload failed: 'float' object cannot be interpreted as an integer
+2025-10-30 22:53:05 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for Retro Bliss
+2025-10-30 22:53:13 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:53:37 [INFO] Google Sheets authentication successful.
+2025-10-30 22:53:37 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:53:37 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:53:37 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:53:40 [INFO] Using token zxWztk
+2025-10-30 22:53:41 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:53:41 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:53:42 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:53:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:53:43 [INFO] Generating image for: Capture a 70s-inspired bathroom with avocado green tiles, shaggy rugs, macramé plant hangers, and a sunburst mirror.
+2025-10-30 22:53:43 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:53:44 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/67632132-eccc-43cb-a9be-aaa50a2f743a "HTTP/1.1 200 OK"
+2025-10-30 22:53:44 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:53:45 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=67632132-eccc-43cb-a9be-aaa50a2f743a "HTTP/1.1 200 OK"
+2025-10-30 22:53:56 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/9d9b86733593f1f3ff2a08b18cde8b2003ebd42c7cc42b68f66df98a1428f5ef/6482c2fc-21f7-4406-8db5-47b803e62c48.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e3413628be1ec84591b8ff63ac96eb6f896e9a7334a0184024dfff4f9afa0f1a/77c586be-ff0d-4650-a4de-8ae808d47d89.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:53:59 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/53b29352b6ff211b83e5cc5ee25d6433f43c3c602de4ffe9bbc6131f39bea898/221807f1-46ba-4054-a493-838b957942f6.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:54:00 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e55659349bf02fb9b58ca4030e48a090a43bb54f416b7de54169d8d7fb85df95/0f12a917-8a75-482c-8856-4ff02f1e02b1.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:54:03 [INFO] Temp URL: https://files.catbox.moe/j34jrb.jpg
+2025-10-30 22:54:04 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Revival
+2025-10-30 22:54:12 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:55:08 [INFO] Google Sheets authentication successful.
+2025-10-30 22:55:08 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:55:09 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:55:09 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:55:12 [INFO] Using token zxWztk
+2025-10-30 22:55:13 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:55:13 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:55:14 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:55:15 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:55:15 [INFO] Generating image for: Capture a retro oasis with a 70s bathroom featuring earthy tones, shag rugs, macramé accents, and vintage mirrors.
+2025-10-30 22:55:15 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:55:16 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:55:16 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/02f027ed-f3d6-411d-92d8-13f135a09aa4 "HTTP/1.1 200 OK"
+2025-10-30 22:55:17 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=02f027ed-f3d6-411d-92d8-13f135a09aa4 "HTTP/1.1 200 OK"
+2025-10-30 22:55:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/c967f616d46777750f0ddf32b80b8c17d0b0f9b2111057f8c3bb03af24cfa040/49489e95-1965-4962-9c5e-301328063695.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:55:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/b40f1135e53d1dbbf7637faaf67e8197aa48d386286e54eed792cffd5bb72066/4acb527b-8ec4-4638-a8a8-1676c2e90643.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:55:30 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/33a031203950b9c1b94e1e022b631912332665ef606318b9206f735b92bef1e7/27fc65ef-4dda-4ff2-9016-58c6e124da9a.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:55:32 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/949210a2127ba14fde0cb99a2d9866ec9df5a583f7521be115d3c6b810be1bde/c258a9d4-32a0-4e92-ac94-b9b7ec949cfd.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:55:32 [ERROR] Temp upload failed: 'float' object cannot be interpreted as an integer
+2025-10-30 22:55:33 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:55:41 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:56:14 [INFO] Google Sheets authentication successful.
+2025-10-30 22:56:14 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:56:15 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:56:15 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:56:18 [INFO] Using token zxWztk
+2025-10-30 22:56:18 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:56:19 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:56:20 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:56:21 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:56:21 [INFO] Generating image for: Capture a 70s-inspired bathroom scene with avocado green tiles, a sunburst mirror, macramé plant hangers, and a shaggy rug for a groovy vibe.
+2025-10-30 22:56:21 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:56:22 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:56:22 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/0dfec864-9abc-4c44-a238-b260ba4501a5 "HTTP/1.1 200 OK"
+2025-10-30 22:56:23 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=0dfec864-9abc-4c44-a238-b260ba4501a5 "HTTP/1.1 200 OK"
+2025-10-30 22:56:33 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/a35d51451461769cb376e1f28e72cfb0e76291b833b0c746e2671d59e114b214/bf9bf00f-f099-4e6b-8455-56e012450f2c.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:56:35 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/8c3f705398c70710a6cad77b3ce01006d61f9dc361612ee1b4a4e27410d930be/4688140a-0118-4b22-b69f-f11c74119658.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:56:36 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e35589b93c0d36a355dce1f16f6d16d5b0a0831ad832944910cbffccbed7c4db/026487a0-eafd-44b3-b70b-cc6f67bb2d7a.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:56:38 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/21e6169978d5b1fecc1b89df32e10805247f20b8f3379ffb0ea9a4713692906e/7bafea32-7f8c-4784-a148-da17b8356a96.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:56:38 [ERROR] Temp upload failed: 'float' object cannot be interpreted as an integer
+2025-10-30 22:56:39 [INFO] Post #1: Added row for 12 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:56:47 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:57:24 [INFO] Google Sheets authentication successful.
+2025-10-30 22:57:24 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:57:24 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:57:24 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:57:27 [INFO] Using token zxWztk
+2025-10-30 22:57:27 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:57:28 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:57:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:57:30 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:57:30 [INFO] Generating image for: Capture a 70s bathroom oasis with avocado green tiles, shaggy rugs, and a sunburst mirror reflecting warm natural light.
+2025-10-30 22:57:30 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:57:31 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/ca9b58a1-7197-4736-aa18-dce42b4c62dc "HTTP/1.1 200 OK"
+2025-10-30 22:57:31 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:57:32 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=ca9b58a1-7197-4736-aa18-dce42b4c62dc "HTTP/1.1 200 OK"
+2025-10-30 22:57:42 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/103cce3f08f1d646caa87fb414450d1438eb9f26efd1d790c520a1e8f34360fb/cd837465-6e27-430a-8f8a-12d1e8e30204.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:57:44 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/836ed946b3c0831aa1fd82a340531f04a7e328df5dc2f4bba3898db25d145ce8/622b2b63-94e7-4fb1-b501-b367d90a6cf0.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:57:45 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/04308f1ae94bf9ff9015c5dcc320493e07f7318e3494a6f518a9741608e074fd/6de4ebb7-b2d1-42d8-a037-229a1aed332d.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:57:46 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/0f1c5ee94de8979b4a911b9aef5157e037ed604466ad3d545633d9e8d9aa24ad/62a4b0a1-cc92-4bcc-afd1-f0d14e0d82f2.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:57:52 [INFO] Temp URL: https://files.catbox.moe/q8tfwn.jpg
+2025-10-30 22:57:53 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 22:58:01 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 22:59:19 [INFO] Google Sheets authentication successful.
+2025-10-30 22:59:19 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 22:59:19 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 22:59:19 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 22:59:22 [INFO] Using token zxWztk
+2025-10-30 22:59:23 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 22:59:23 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 22:59:24 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 22:59:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 22:59:25 [INFO] Generating image for: Capture a groovy 70s bathroom with avocado green tiles, shaggy rugs, and a sunburst mirror
+2025-10-30 22:59:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 22:59:26 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/fd6ee836-3ce2-41df-96e5-4cf299dcae38 "HTTP/1.1 200 OK"
+2025-10-30 22:59:26 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 22:59:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=fd6ee836-3ce2-41df-96e5-4cf299dcae38 "HTTP/1.1 200 OK"
+2025-10-30 22:59:38 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/0454e7ac66466755bf708b33fa42aa45f8462702dd42a7d49b267786db3bf8d1/84976bf0-a49a-4a0b-820a-d5ffcc8a3bfe.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:59:40 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ad619a2b0f952b960088b2bdfa7c3aeed9df11fd7e9582c77888251ddde13d9d/63dea048-1434-4ec7-870c-81d5a908887a.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:59:41 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/fdbe3299d9f02c0015e1633c49be92a7bf6a8aa16fcdd2727b2114e783f0f704/6ee5e4f3-9151-46fd-9e28-27390aa56861.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:59:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/575640ed9dab228c933bb61f196d033cd5eca2c346e0966580d5882acfabbd14/46b05280-21c4-4da4-b5a5-ac3931c52612.jpg "HTTP/1.1 200 OK"
+2025-10-30 22:59:46 [INFO] Temp URL: https://files.catbox.moe/r16ujr.jpg
+2025-10-30 22:59:47 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Designs for a Retro Revival
+2025-10-30 22:59:55 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:00:24 [INFO] Google Sheets authentication successful.
+2025-10-30 23:00:24 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:00:24 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:00:24 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:00:28 [INFO] Using token zxWztk
+2025-10-30 23:00:28 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:00:29 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:00:30 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:00:31 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:00:31 [INFO] Generating image for: A 70s-inspired bathroom scene featuring avocado green tiles, a sunburst mirror, shaggy rugs, and a hanging macramé plant holder.
+2025-10-30 23:00:31 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:00:32 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:00:32 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/29024648-934e-4601-85c6-5576e6d837c4 "HTTP/1.1 200 OK"
+2025-10-30 23:00:33 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=29024648-934e-4601-85c6-5576e6d837c4 "HTTP/1.1 200 OK"
+2025-10-30 23:00:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/09bb389a59d758fc5745c5f7f849f851e32ccc28f0627ed0261d8a4e9d6ba649/fd65fdcc-9d38-40b2-8e0c-55732906cc52.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:00:48 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/56d8ec4d2a3a12f6db05cd61c7df19c67b1e33194cb7d584b442639407fe5e68/722f40fa-4e70-45c4-871a-3a9fdefdd83e.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:00:49 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e15f7eb7027d48677435f8e42d3eb4ef9e4085c899d254a462dff56c505f6f9d/1ad78378-6a39-465c-8e57-1fc384949941.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:00:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/aa926ba011b17e70b590101b2e1968f4f2a9452db45324f78808174ff64d17f6/f54d43d4-9fe5-4c3b-9f47-eea7d5bc649a.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:00:53 [INFO] Temp URL: https://files.catbox.moe/krt120.jpg
+2025-10-30 23:00:54 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Revival
+2025-10-30 23:01:02 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:02:31 [INFO] Google Sheets authentication successful.
+2025-10-30 23:02:31 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:02:31 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:02:31 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:02:35 [INFO] Using token zxWztk
+2025-10-30 23:02:36 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:02:36 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:02:37 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:02:38 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:02:38 [INFO] Generating image for: A retro 70s bathroom scene with avocado green tiles, a sunken bathtub, shaggy rug, and hanging macramé plant holders.
+2025-10-30 23:02:38 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:02:39 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:02:39 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/ae13fe35-8bc4-4540-a140-d4285dc0a378 "HTTP/1.1 200 OK"
+2025-10-30 23:02:40 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=ae13fe35-8bc4-4540-a140-d4285dc0a378 "HTTP/1.1 200 OK"
+2025-10-30 23:02:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ed59483a94bfdd94a03fcbc6c8fa34ade69eedcab41d98f0facb91689905fd05/5bb43ec2-7051-41fa-b2af-0d76bff5ceca.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:02:52 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/30d5812b88d04fac1fa20a77fa4a4bd245d404d23bf76a32e8dcb8d563ad4fc8/fc43b2b7-5dc2-49e5-9a5a-5d05002c3280.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:02:53 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/39f855ff049ac23d0783cebbf33682c5a3c07be1f2dd9afb40645e45a97456d8/48cd4510-3d71-4161-9505-02498b538f53.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:02:54 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/c2b1820113c095dcf4618d748eacd936cb54ae6abee3a15e0814d1ac962f8b7d/ef264cbb-fa83-49ce-bae6-246547fcef08.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:02:57 [INFO] Temp URL: https://files.catbox.moe/wf89jx.jpg
+2025-10-30 23:02:58 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Retreat
+2025-10-30 23:03:06 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:04:42 [INFO] Google Sheets authentication successful.
+2025-10-30 23:04:42 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:04:43 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:04:43 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:04:46 [INFO] Using token zxWztk
+2025-10-30 23:04:47 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:04:47 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:04:48 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:04:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:04:50 [INFO] Generating image for: Capture a retro oasis with a 70s bathroom featuring earthy tones, bold patterns, and vintage accessories
+2025-10-30 23:04:50 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:04:51 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:04:51 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/c200aeb0-1e69-4906-b84c-6200b6f57569 "HTTP/1.1 200 OK"
+2025-10-30 23:04:52 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=c200aeb0-1e69-4906-b84c-6200b6f57569 "HTTP/1.1 200 OK"
+2025-10-30 23:05:02 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ae96b2d0b5993d79999a08c148df33d771a321de606ea8c5110c6c0d7bd1667c/54e611b7-06b5-411d-b155-6f833ca49124.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:05:04 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/fd0ec47585e96c86be9ea9d293236d1a2b4e445836359fae9443fcde9db61ff8/2154210d-4044-4bde-99a5-b0fb72c42316.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:05:05 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/d0287222e3bd79da790f1ea188040721885fe075dbb84299ae7acc50e16c3f19/dd35f029-cbad-4bec-8f8b-49c8c9c9a95e.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:05:06 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/3bdd3ab0bf1f50537676c997a47e152f3b05228d4b1ea9618d5be689703d3478/e2dd9c91-e2ea-4a22-9737-b4bca69db13d.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:05:12 [INFO] Temp URL: https://files.catbox.moe/uaq3y6.jpg
+2025-10-30 23:05:12 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Revival
+2025-10-30 23:05:20 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:07:04 [INFO] Google Sheets authentication successful.
+2025-10-30 23:07:04 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:07:04 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:07:04 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:07:07 [INFO] Using token zxWztk
+2025-10-30 23:07:08 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:07:08 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:07:10 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:07:11 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:07:11 [INFO] Generating image for: Capture a retro oasis with a 70s-inspired bathroom: terrazzo flooring, avocado green fixtures, macramé plant hangers, and vintage posters.
+2025-10-30 23:07:11 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:07:12 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/f640ba7d-42c4-4d45-a225-7198d166ea31 "HTTP/1.1 200 OK"
+2025-10-30 23:07:12 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:07:13 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=f640ba7d-42c4-4d45-a225-7198d166ea31 "HTTP/1.1 200 OK"
+2025-10-30 23:07:24 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/49d673f46d09c40fc98714405c232b08b80be709b1dce7f4c305d1735e58aa2b/cef46578-4f0b-43fa-9328-12098becc3e4.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:07:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/3f36947aa041f00ee9fdecc73c2814a99b5fbb65a7f475154f8ad1aca26bcc74/27da0d6a-6f33-4ca1-ba3b-2a82173f5486.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:07:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/ebdea45276cbcbc0d3d2e4072c34a5d0b888455079543042186db249ea79da51/48b0ea82-fff7-464f-9bf2-4ab59e6cb3f8.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:07:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/120c007f3396c53c2d2cadcda9ab31daa50c14cc339705ba5cf033c2d271bd40/aac1713c-94a1-4eb4-a77a-86d36516b56a.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:07:31 [INFO] Temp URL: https://files.catbox.moe/pxkez5.jpg
+2025-10-30 23:07:31 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Makeover Ideas for a Retro Retreat
+2025-10-30 23:07:39 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:08:46 [INFO] Google Sheets authentication successful.
+2025-10-30 23:08:46 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:08:46 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:08:46 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:08:52 [INFO] Using token zxWztk
+2025-10-30 23:08:53 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:08:53 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:08:54 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:08:55 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:08:55 [INFO] Generating image for: Capture a retro oasis with a 70s bathroom makeover, featuring earthy tones, funky patterns, and vintage accents
+2025-10-30 23:08:55 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:08:56 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:08:56 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/b182998c-ea81-4c6e-afe8-3c79057b708e "HTTP/1.1 200 OK"
+2025-10-30 23:08:57 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=b182998c-ea81-4c6e-afe8-3c79057b708e "HTTP/1.1 200 OK"
+2025-10-30 23:09:08 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/8dab14c76c35e7abf2d5b2449ab1e423b3915edfb39d3a4ed0d419d2023512bb/174c7160-b23c-4417-98bd-ec7b1fcb2ba8.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:09:09 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/46d74baf40ffe113f2908c64f012dd00f2cd8eda6c0ad46bd2c406c5347e1fb7/8ad867e8-e6bd-46f3-865f-81fba14933b6.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:09:11 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/938f443e6f7f9b2ae0ebe48250f9c46b7588f1cf9160010d076c927e5125bfe5/433faeca-e9a8-4fbe-be2b-03e391418961.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:09:12 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e5bdd832177ebc42f72e20d4abeb5900653671c5d1e1882f9f8880452ae9aacd/e6a35a64-9776-4ac1-a6e4-4e711e5e8074.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:09:12 [ERROR] Temp upload failed: 'float' object cannot be interpreted as an integer
+2025-10-30 23:09:13 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Makeover Ideas for a Retro Retreat
+2025-10-30 23:09:21 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:09:39 [INFO] Google Sheets authentication successful.
+2025-10-30 23:09:39 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:09:40 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:09:40 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:09:45 [INFO] Using token zxWztk
+2025-10-30 23:09:45 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:09:46 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:09:47 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:09:48 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:09:48 [INFO] Generating image for: Capture a retro retreat with a 70s bathroom featuring earthy tones, shaggy rugs, macramé plant hangers, and vintage mirrors.
+2025-10-30 23:09:48 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:09:49 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/743c5d90-0675-4b76-90d5-0471c71a7ba9 "HTTP/1.1 200 OK"
+2025-10-30 23:09:49 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:09:50 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=743c5d90-0675-4b76-90d5-0471c71a7ba9 "HTTP/1.1 200 OK"
+2025-10-30 23:10:00 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/df70f437ab7a1bc62d662593653ea044eee12537ee5c40e836eb806f883884ff/1e15ea9f-5a75-45c1-acbe-88977a90c212.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:10:01 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/fb091ab0911fb15b773c372bfb8c9ee4c7589d1949e4c2ff687fcbb736c3f250/9e202b99-61f7-49dd-a4e6-a40475c12646.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:10:03 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/3efc5dc0a9907685627d94362fe5e3a4f34e5d5023dfd93777098b377038a282/c68ac1fb-036e-43f9-9335-3cef435c703b.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:10:04 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/06d7f5ab8ddecf56d1aaecd4650deb238240ca1ed00abf9cc7a7912be23006c3/53e14f79-70bf-494d-82ea-cdbb74627266.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:10:07 [INFO] Temp URL: https://files.catbox.moe/6sdnje.jpg
+2025-10-30 23:10:07 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for a Retro Retreat
+2025-10-30 23:10:15 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:12:22 [INFO] Google Sheets authentication successful.
+2025-10-30 23:12:22 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:12:23 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:12:23 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:12:26 [INFO] Using token zxWztk
+2025-10-30 23:12:27 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:12:27 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:12:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:12:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:12:29 [INFO] Generating image for: Capture a nostalgic 70s bathroom scene with bold floral wallpaper, shaggy rugs, and avocado green fixtures under warm, soft lighting.
+2025-10-30 23:12:29 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:12:30 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:12:30 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/5ba3574b-a201-4ba6-91a1-1eccd0bf69ff "HTTP/1.1 200 OK"
+2025-10-30 23:12:31 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=5ba3574b-a201-4ba6-91a1-1eccd0bf69ff "HTTP/1.1 200 OK"
+2025-10-30 23:12:42 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/985c587decf72ef5f7dae616490e1f1bf567bfba20028a376ca57f21f41e5b44/9536d614-8d0d-445d-8d7e-e02d6b1f6129.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:12:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/f1f82d2dcb31e3443fe5001f6117cc214537665a775d0b12ba6a5f5eba5d73bc/029db694-e985-4da5-af52-e6d4c38e3351.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:12:44 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/5bf76bceed0789c8fba1addcd20c439b7d0258e279497f483c52fac315be2e84/222be092-9524-4ed3-a80b-a35e41139ff5.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:12:46 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/25aa34c126700ad63f65f83357a1507ed3dce4ecdc7504827f3ec48726a6149d/04e3ddf9-25bf-44a0-aa5f-985a43e29249.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:12:50 [INFO] Temp URL: https://files.catbox.moe/q44pac.jpg
+2025-10-30 23:12:51 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Ideas for a Retro Revival
+2025-10-30 23:12:59 [INFO] 
+Done! Published 1 posts today.
+2025-10-30 23:19:20 [INFO] Google Sheets authentication successful.
+2025-10-30 23:19:20 [INFO] Starting Pinterest Auto Publisher
+2025-10-30 23:19:20 [INFO] Loaded 2 blogs for rotation.
+2025-10-30 23:19:20 [INFO] 
+Using blog: https://homeg.org/70s-bathroom-decor-ideas
+2025-10-30 23:19:23 [INFO] Using token zxWztk
+2025-10-30 23:19:24 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-10-30 23:19:24 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-10-30 23:19:25 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-10-30 23:19:26 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-10-30 23:19:26 [INFO] Generating 4-variant collage for: Capture a 70s inspired bathroom with earthy tones, shag rugs, macrame plant hangers, and a sunburst mirror for a retro vibe.
+2025-10-30 23:19:26 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-10-30 23:19:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/538aab6a-6bc4-447f-88af-0662524f8314 "HTTP/1.1 200 OK"
+2025-10-30 23:19:27 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-10-30 23:19:28 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=538aab6a-6bc4-447f-88af-0662524f8314 "HTTP/1.1 200 OK"
+2025-10-30 23:19:38 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/13910087f67576d038deb20f342c5980facaf1cdfc0feff5e7cbf4ac6b0fe4ec/b2931a57-ebb7-4e09-8f65-139bc75b849f.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:19:40 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/e62a0b1c1043d360a5ecb882ee01aaaf056ff8aebfe6234db03622a943488038/4795334e-860c-44d2-8323-5c7e8e7961f5.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:19:41 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/d0a6f8095bb28cd1dfe8f6586960f11c8dd0810df2164bc0f0c233b4a9e44b84/a53ae7e5-fc37-4369-93d6-c950f5baefca.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:19:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/f80c3603712c4b36063e6f193759080b75183f2b49db8a29a350403ce5fd83bf/81491824-5d28-4e44-9463-cb519f09496b.jpg "HTTP/1.1 200 OK"
+2025-10-30 23:19:43 [INFO] Collage created successfully.
+2025-10-30 23:19:46 [INFO] Temp URL: https://files.catbox.moe/53fs4e.jpg
+2025-10-30 23:19:47 [INFO] Post #1: Added row for 10 Groovy 70s Bathroom Decor Ideas for Retro Vibes
+2025-10-30 23:19:55 [INFO] 
+Done! Published 1 posts today.
