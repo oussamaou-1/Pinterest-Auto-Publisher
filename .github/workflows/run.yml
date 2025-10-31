@@ -1,12 +1,9 @@
 name: Pinterest Automation
 
 on:
-  # ✅ Run manually from the Actions tab
-  workflow_dispatch:
-
   # ✅ Schedule to run automatically (UTC time)
   schedule:
-    - cron: "0 3 * * *"  # Every day at 03:00 UTC — adjust to your timezone
+    - cron: "0 17 * * *"  # Every day at 03:00 UTC — adjust to your timezone
 
 jobs:
   run-automation:
@@ -20,6 +17,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+
+      - name: ⚡ Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: 📦 Install dependencies
         run: |
