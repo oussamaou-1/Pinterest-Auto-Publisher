@@ -375,7 +375,7 @@ OUTPUT (STRICT JSON ONLY, no extra text):
     return data
 
 # ==== DAILY POST CONFIG ====
-POSTS_PER_DAY = 1  # total posts to make per day
+POSTS_PER_DAY = 10  # total posts to make per day
 DO_IMAGES = True
 NEGATIVE_PROMPT = ""
 
