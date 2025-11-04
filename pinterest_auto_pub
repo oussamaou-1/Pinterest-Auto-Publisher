@@ -90,11 +90,11 @@ def get_gradio_client():
 
 # ==== BLOG URL LIST (no marking used) ====
 sitemap_rows = sitemap_sheet.get_all_records()
-blog_urls = [r.get("Blog URL") for r in sitemap_rows if r.get("Blog URL")]
-if not blog_urls:
+blogs = [{"blog_url":r.get("Blog URL"), "board":r.get("Board")} for r in sitemap_rows if r.get("Blog URL")]
+if not blogs:
     logger.error("No blog URLs found in the sitemap sheet.")
     raise RuntimeError("No blog URLs found in the sitemap sheet.")
-logger.info(f"Loaded {len(blog_urls)} blogs for rotation.")
+logger.info(f"Loaded {len(blogs)} blogs for rotation.")
 
 # ==== IMAGE GENERATION ====
 IMAGE_STYLE = ", beautiful furniture placement, stylish decor, balanced composition, high-resolution Pinterest home decor photo, DSLR, Pinterest aesthetic"
@@ -384,11 +384,11 @@ post_count = 0
 blog_index = 0
 
 while post_count < POSTS_PER_DAY:
-    blog_url = blog_urls[blog_index]
-    logger.info(f"\nUsing blog: {blog_url}")
+    blog = blogs[blog_index]
+    logger.info(f"\nUsing blog: {blog["blog_url"]}")
 
     # === Step 1: Generate SEO data ===
-    seo_data = generate_seo_openrouter(blog_url)
+    seo_data = generate_seo_openrouter(blog["blog_url"])
 
     # === Step 2: Build entry list ===
     entries = []
@@ -397,7 +397,8 @@ while post_count < POSTS_PER_DAY:
             "title": (title or "")[:100],
             "prompt": img_prompt or "",
             "description": (seo_data.get("description") or "")[:500],
-            "blog_url": blog_url
+            "blog_url": blog["blog_url"],
+            "board": blog["board"]
         })
 
     # === Step 3: Generate images, upload to temp host, append to Google Sheets ===
@@ -428,9 +429,9 @@ while post_count < POSTS_PER_DAY:
                 logger.error(f"Temp upload failed: {e}")
 
 
-        # Append (A: Blog URL, B: Title, C: Image URL, D: Description, E: Status)
+        # Append (A: Blog URL, B: Board, C: Image URL, D: Title, E: Description, F: Status)
         content_sheet.append_row(
-            [item["blog_url"], None, image_url, item["title"], item["description"], status],
+            [item["blog_url"], item["board"], image_url, item["title"], item["description"], status],
             value_input_option="USER_ENTERED"
         )
 
@@ -439,6 +440,6 @@ while post_count < POSTS_PER_DAY:
         time.sleep(DELAY_IMAGE if DO_IMAGES else 0.2)
 
     # === Rotate blog index ===
-    blog_index = (blog_index + 1) % len(blog_urls)
+    blog_index = (blog_index + 1) % len(blogs)
 
 logger.info(f"\nDone! Published {post_count} posts today.")
