@@ -385,7 +385,7 @@ blog_index = 0
 
 while post_count < POSTS_PER_DAY:
     blog = blogs[blog_index]
-    logger.info(f"\nUsing blog: {blog["blog_url"]}")
+    logger.info(f"\nUsing blog: {blog['blog_url']}")
 
     # === Step 1: Generate SEO data ===
     seo_data = generate_seo_openrouter(blog["blog_url"])

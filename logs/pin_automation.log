@@ -45,3 +45,22 @@ Using blog: https://decorideas.sbtglobale.com/23-calming-bedroom-ideas-that-brin
 2025-11-04 22:43:23 [INFO] Collage created successfully.
 2025-11-04 22:43:28 [INFO] Temp URL: https://files.catbox.moe/12kv4e.jpg
 2025-11-04 22:43:28 [INFO] Post #1: Added row for 10 Zen Bedroom Ideas for a Serene Retreat
+2025-11-04 22:55:19 [INFO] Google Sheets authentication successful.
+2025-11-04 22:55:19 [INFO] Starting Pinterest Auto Publisher
+2025-11-04 22:55:20 [INFO] Loaded 1 blogs for rotation.
+2025-11-04 22:55:20 [INFO] 
+Using blog: https://decorideas.sbtglobale.com/23-calming-bedroom-ideas-that-bring-zen-vibes-to-your-space/
+2025-11-04 22:55:24 [INFO] Using token zxWztk
+2025-11-04 22:55:25 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion "HTTP/1.1 200 OK"
+2025-11-04 22:55:25 [INFO] HTTP Request: GET https://huggingface.co/api/spaces/stabilityai/stable-diffusion/runtime "HTTP/1.1 200 OK"
+2025-11-04 22:55:26 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/config "HTTP/1.1 200 OK"
+2025-11-04 22:55:27 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/info?serialize=False "HTTP/1.1 200 OK"
+2025-11-04 22:55:27 [INFO] Generating 4-variant collage for: A serene bedroom scene with a minimalist platform bed, soft earthy linens, a bamboo side table, and a potted plant in a sunlit corner.
+2025-11-04 22:55:28 [INFO] HTTP Request: HEAD https://huggingface.co/api/telemetry/py_client/initiated "HTTP/1.1 200 OK"
+2025-11-04 22:55:29 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/heartbeat/9db80cf9-067a-4ac4-92b7-1b6c53c6644b "HTTP/1.1 200 OK"
+2025-11-04 22:55:29 [INFO] HTTP Request: POST https://stabilityai-stable-diffusion.hf.space/queue/join "HTTP/1.1 200 OK"
+2025-11-04 22:55:30 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/queue/data?session_hash=9db80cf9-067a-4ac4-92b7-1b6c53c6644b "HTTP/1.1 200 OK"
+2025-11-04 22:55:40 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/c12628b643e737f79fdb86ca22b571fc8526bb4a0777618af221a4a57f87ac28/2514b2d4-9499-4476-9419-7ad4d86164cc.jpg "HTTP/1.1 200 OK"
+2025-11-04 22:55:42 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/7a1476e4161d9ba878750e682d90bef61bd059402781e4dda6ddcb8c56b18604/8b3bfc48-0bfc-457d-b8ed-885638f1e747.jpg "HTTP/1.1 200 OK"
+2025-11-04 22:55:43 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/05e547e8e5a33a455866082bbb8bbaf1ce8545c82c8d0ffb8d367b2055edcef0/e9897b09-af89-43ac-aa2f-7cdc898b862b.jpg "HTTP/1.1 200 OK"
+2025-11-04 22:55:45 [INFO] HTTP Request: GET https://stabilityai-stable-diffusion.hf.space/file=/tmp/gradio/878d3ffb07f9631bf6206545db9fa54ac68ca4a428d4662d74c746d754804146/a9045ea6-a6ec-4f63-bfa0-e0fecfa4b1c0.jpg "HTTP/1.1 200 OK"
